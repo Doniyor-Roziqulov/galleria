@@ -1,0 +1,123 @@
+@font-face {
+    font-display: swap;
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/libre-baskerville-v14-latin-regular.woff2")
+            format("woff2"),
+        url("./fonts/libre-baskerville-v14-latin-regular.woff") format("woff");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./fonts/libre-baskerville-v14-latin-700.woff2") format("woff2"),
+        url("./fonts/libre-baskerville-v14-latin-700.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.start-link {
+    color: #7d7d7d;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.571px;
+    text-decoration-line: none;
+}
+
+.starry-title {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.starry-text {
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.7528;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+.img-wrapper {
+    padding-top: 40px;
+    padding-bottom: 311px;
+}
+
+.gallery-box {
+    position: relative;
+}
+
+.starry-box {
+    position: absolute;
+    left: 32px;
+    bottom: 33px;
+}
+
+.star-box {
+    display: grid;
+    grid-template: 200px 400px 600px 200px / 310px;
+    row-gap: 40px;
+}
+
+.pearl-box {
+    display: grid;
+    grid-template: 400px 200px repeat(2 , 400px) / 310px;
+    row-gap: 40px;
+}
+
+.guernice-box {
+    display: grid;
+    grid-template: 200px 600px 400px 200px / 310px;
+    row-gap: 40px;
+}
+
+.penitent-box {
+    display: grid;
+    grid-template: 400px repeat(2 , 200px) 600px / 310px;
+    row-gap: 40px;
+}
+
+.gallery-wrapper {
+    display: grid;
+    grid-template: 1520px / repeat(4 , 310px);
+    column-gap: 40px;
+}
